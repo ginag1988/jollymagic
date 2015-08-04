@@ -42,7 +42,8 @@ class ContactFormPresenterTest extends \PHPUnit_Framework_TestCase
 
     public function testThatIfFormIsSuccessFormHasSuccessClass()
     {
-        $contactForm = new ContactFormPresenter(null,
+        $contactForm = new ContactFormPresenter(
+            null,
             (object) array(
                 'success' => true,
                 'errors' => []
